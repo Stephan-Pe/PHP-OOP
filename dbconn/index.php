@@ -1,7 +1,5 @@
 <?php
-    include 'includes/dbh.inc.php';
-    include 'includes/user.inc.php';
-    include 'includes/viewuser.inc.php';
+    include 'includes/class-autoload.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
