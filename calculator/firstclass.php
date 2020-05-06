@@ -1,6 +1,6 @@
 <?php
 
-include 'includes/autoloader.inc.php';
+include 'includes/class-autoload.inc.php';
 
 ?>
 <!DOCTYPE html>
