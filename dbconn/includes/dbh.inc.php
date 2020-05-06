@@ -1,6 +1,6 @@
 <?php
 
-class dbh {
+class Dbh {
 
     private $servername;
     private $username;
