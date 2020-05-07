@@ -26,8 +26,22 @@
             <button type="submit" name="submit">Calculate</button>
 
         </form>
-      
     </div>
+    <?php
+$string = get_include_contents('includes/calc.inc.php');
+
+function get_include_contents($myRes) {
+    if (is_file($myRes)) {
+        ob_start();
+        echo $myRes;
+        
+        return ob_get_clean();
+    }
+    return false;
+}
+?>
+    
+
     <script src="js/app.js"></script>
     
 </body>
