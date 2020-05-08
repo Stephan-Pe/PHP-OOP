@@ -1,6 +1,6 @@
 <?php
 
-include 'includes/class-autoload.inc.php';
+include 'includes/class-autoload.php';
 
 ?>
 <!DOCTYPE html>
@@ -11,7 +11,8 @@ include 'includes/class-autoload.inc.php';
     <title>Document</title>
 </head>
 <body>
-<?php
+        <?php
+        // ScopeResolutionOperator
             User\User::setUserAge(21);
             echo User\User::$userAge;
         ?>
@@ -21,10 +22,12 @@ include 'includes/class-autoload.inc.php';
             echo $user1->getName();
             echo "</h4>";
             echo $user1->getUserAge();
+            // You can access without Adress\Adress because ther is no namespace
             $home1 = new Adress("Mainstreet", "Mainhattan", 6666);
             echo "<h4>";
             echo $home1->getZip();
             echo "</h4>";
+            
 
         ?>
 </body>

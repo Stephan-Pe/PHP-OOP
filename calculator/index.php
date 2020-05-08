@@ -1,5 +1,6 @@
 <?php
     // Type declaration has to be followed or throws error!
+    // And makes Error easier to read because range of Error is specific
     declare(strict_types =1);
     include 'includes/class-autoload.inc.php';
 ?>
@@ -13,6 +14,7 @@
 </head>
 <body>
     <div class="texasinstruments">
+        <!--set action to processing PHP file-->
         <form action="includes/calc.inc.php" method="post">
             <p>Calculator</p>
             <input type="number" name="num1" placeholder="First number">
@@ -27,19 +29,10 @@
 
         </form>
     </div>
+    
     <?php
-$string = get_include_contents('includes/calc.inc.php');
-
-function get_include_contents($myRes) {
-    if (is_file($myRes)) {
-        ob_start();
-        echo $myRes;
-        
-        return ob_get_clean();
-    }
-    return false;
-}
-?>
+      
+    ?>
     
 
     <script src="js/app.js"></script>

@@ -1,5 +1,5 @@
 <?php
-
+// sql variant, can also be done with PDO (PHP Data Objects) like pdo.dbconn.php
 class Dbh {
 
     private $servername;
