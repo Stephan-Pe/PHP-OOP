@@ -21,6 +21,7 @@ class Adress {
         return $this->street. " " .$this->city. " " .$this->zip;
     }
     public function getUserZip() {
+        // ScopeResolutionOperator
         return self::$zip;
     }
 
