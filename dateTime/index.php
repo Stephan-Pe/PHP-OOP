@@ -29,9 +29,12 @@
         echo "<br>";
 
         // float not Integer
-        // $time = microtime();
+        $time = microtime();
 
-        // echo $time;
+        echo $time;
+
+        echo "<br>";
+        echo "<br>";
 
         // converting time to string
 

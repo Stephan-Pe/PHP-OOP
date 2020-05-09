@@ -1,6 +1,8 @@
 # PHP Object Oriented Programming
 
-## Themes so far...
+## Alternativ procedural PHP or regular PHP
+
+### Themes so far...
 
 - //    ScopeResolutionOperator self::$userAge = $newUA;
 - //    declare(strict_types =1); __construct(string $operator, int $num1, int $num2)
