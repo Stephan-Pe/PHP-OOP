@@ -82,6 +82,7 @@ body {
 
 .texasinstruments {
   padding: 30px 10px 10px 10px;
+  text-align: center;
   width: 300px;
   height: 500px;
   background-color: silver;
@@ -90,12 +91,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .texasinstruments form {
+  margin: 0 auto;
   width: 80%;
   height: 50%;
   display: -webkit-box;
@@ -110,8 +113,43 @@ body {
           justify-content: space-between;
 }
 
+.texasinstruments form input {
+  margin: 30px 0 10px 0;
+  border-radius: 4px;
+  font-size: 26px;
+}
+
+.texasinstruments form select {
+  margin: 30px 0 10px 0;
+  border-radius: 4px;
+  font-size: 26px;
+}
+
+.texasinstruments form button {
+  border-radius: 4px;
+  background-color: coral;
+  font-size: 26px;
+}
+
 .texasinstruments p {
   background-color: snow;
   line-height: 3rem;
+  border-radius: 4px;
+}
+
+.resultWin {
+  text-align: right;
+  width: 100%;
+  height: 50px;
+  background-color: silver;
+}
+
+.resultWin span {
+  border: 2px solid black;
+  display: block;
+  font-family: monospace;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 20px 0 20px 0;
 }
 /*# sourceMappingURL=main.css.map */

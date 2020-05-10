@@ -10,27 +10,28 @@
 
         date_default_timezone_set("Europe/Berlin");
 
-        //Datentime Objekte erzeugen (Jahr-Monat-Tag)
-        $datum1 = new DateTime('1963-04-24'); //Geburtsdatum
-        $datum2 = new DateTime(date('Y')+ +date('m')+ +date('d')); //Aktuelles Datum
+        //Create DateTime objects (year-month-day)
+        $datum1 = new DateTime('1963-04-24'); //birthdate
+        $datum2 = new DateTime(date('Y')+ +date('m')+ +date('d')); //current date
 
         $interval = $datum2->diff($datum1);
-        //Das Ergebnis wird formatiert. %Y gibt die Jahre an (4stellig) %m die Monate und %d die Tage
-        //Wenn wir die Tage durch 7 teilen und abrunden, erhalten wir die Anzahl der Wochen
+        //The result is formatted. % Y specifies the years (4 digits)% m the months and% d the days
+        //If we divide and round the days by 7, we get the number of weeks
         $wochen = floor($interval->format('%d') / 7);
 
-        //Die restlichen Tage, die nicht mehr eine ganze Woche bilden können (<7) sollen ebenfalls angezeigt werden
+        //The remaining days, which can no longer form a whole week (<7) should also be displayed
         $tage = ($interval->format('%d') % 7);
 
         //Output
+        echo "As times go by!<br>";
         echo $interval->format("%Y Jahre %m Monate $wochen Wochen $tage Tage");
 
         echo "<br>";
         echo "<br>";
 
-        // float not Integer
+        // displays a float not Integer
         $time = microtime();
-
+        echo "This is a float!<br>";
         echo $time;
 
         echo "<br>";
@@ -42,6 +43,7 @@
         $dateFormate2 = "09 Oct. 2020 17:30";
         $dateFormate3 = "2020/10/09";
 
+        echo "Timestamp!<br>";
         echo strtotime($dateFormate3);
         echo "<br>";
 
@@ -61,9 +63,9 @@
 
         echo date('l jS \of F Y h:i:s A');
 
-        $geburtsTag = mktime(0, 0, 0, date("m"),   date("d"),   date("Y")-57);
+        $today = mktime(0, 0, 0, date("m"),   date("d"),   date("Y"));
 
-        echo $geburtsTag
+        echo $today
 
     ?>
     

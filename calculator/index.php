@@ -2,7 +2,7 @@
 // Type declaration has to be followed or throws error!
 // And makes Error easier to read because range of Error is specific
 declare(strict_types=1);
-include 'includes/class-autoload.inc.php';
+include 'includes/classAutoloader.inc.php';
 include 'includes/calc.inc.php';
 ?>
 <!DOCTYPE html>
@@ -17,9 +17,22 @@ include 'includes/calc.inc.php';
 
 <body>
     <div class="texasinstruments">
+        <p>Calculator TX 01</p>
         <!--set action to processing PHP file-->
         <form action="" method="post">
-            <p>Calculator</p>
+            <label class="resultWin">
+                <span>
+                    <?php
+                    if (isset($calc)) {
+                        try {
+                            echo "<h2>" . $calc->calculator() . "</h2>";
+                        } catch (TypeError $e) {
+                            echo "Error!: " . $e->getMessage();
+                        } 
+                    }
+                    ?>
+                </span>
+            </label>
             <input type="number" name="num1" placeholder="First number">
             <select name="operator" id="">
                 <option value="add">Addition</option>
@@ -33,15 +46,7 @@ include 'includes/calc.inc.php';
         </form>
     </div>
 
-    <?php
-    if (isset($calc)) {
-        try {
-            echo "<h2>" . $calc->calculator() . "</h2>";
-        } catch (TypeError $e) {
-            echo "Error!: " . $e->getMessage();
-        }
-    }
-    ?>
+
 
 
     <script src="js/app.js"></script>
