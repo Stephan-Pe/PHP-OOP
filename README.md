@@ -13,28 +13,17 @@
 - set the default timezone ``date_default_timezone_set("Europe/Berlin");`` where you need to.
 - [Time Zone Abbreviations](https://www.timeanddate.com/time/zones/)
 
-Alternativ procedural PHP or regular PHP
+## database connection
+- 3 Examples of database connection, dbconn folder with dbh.inc.php witch is an mysqli connection with a class private and a protected method
+- the dbc folder with  db.php witch is a PDO with a static method, A property declared as static cannot be accessed with an instantiated class object. You can access the method
+- and the another dbc with pdo.dbconn.php witch ist private with a protected method you can extend ``class Something extends Dbh`` to.
+
+## use classes 
+
+- PHP: Scope Resolution Operator (::)
+- [w3resource](https://www.w3resource.com/php/classes-objects/php-object-oriented-programming.php#ScopeResolution)
+In PHP, the scope resolution operator is also called Paamayim Nekudotayim which means "double colon" or "double dot twice" in Hebrew. The double colon (::), is a token which allows access to static, constant, and overridden properties or methods of a class. (Text from w3resource)
+- you see examples on ``return self`` in a getter method and in the dbc folder in a static method
 
 
-- //    ScopeResolutionOperator self::$userAge = $newUA;
-- //    declare(strict_types =1); __construct(string $operator, int $num1, int $num2)
-- //    $calc = new Calc($oper, (int)$num1, (int)$num2);
--       namespace  // 
-
-```
-
-        <?php
-        namespace User;
-
-        class User {
-            private $name;
-            private $lastname;
-        ?>
-```
--       spl_autoload_register // makes life easier ;-)
-```
-        <?php
-            include 'includes/class-autoload.inc.php';
-        ?>
-```
 
