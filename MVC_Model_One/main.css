@@ -1,0 +1,201 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right bottom, from(#0000cc), to(#33ccff));
+  background: linear-gradient(to bottom right, #0000cc 0%, #33ccff 100%);
+}
+
+.header {
+  height: 120px;
+  width: 100vw;
+  background-color: #333333;
+  border-bottom: 2px solid silver;
+}
+
+.header ul {
+  margin-top: 0;
+  margin-left: 40px;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header ul li {
+  list-style: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 40px 0 10px 0;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: #c1c1c1;
+  font-size: 20px;
+}
+
+p {
+  margin: 10px;
+  font-size: 26px;
+}
+
+#logo {
+  width: 80px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+.form {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 60px;
+  right: 40px;
+}
+
+.form input, a {
+  font-size: 20px;
+  margin: 0 10px 0 0;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+.form a {
+  text-decoration: none;
+  color: #c1c1c1;
+}
+
+.form button {
+  font-size: 24px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 2px solid #c1c1c1;
+  border-radius: 6px;
+  margin: 0 10px 0 0;
+}
+
+.answer {
+  background-color: #ffffff;
+  width: 30vw;
+  height: 500px;
+  padding-top: 20px;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 2px 6px #333333;
+          box-shadow: 1px 2px 6px #333333;
+  margin: 20px;
+}
+
+.answer nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: wheat;
+  padding: 4px;
+  background-color: #200772;
+  -webkit-box-shadow: 2px 2px 6px silver;
+          box-shadow: 2px 2px 6px silver;
+}
+
+::-webkit-input-placeholder {
+  padding-left: 10px;
+}
+
+:-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+::-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+::placeholder {
+  padding-left: 10px;
+}
+
+html {
+  height: 100%;
+  width: 100vw;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #c1c1c1;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+/**signup page**************************/
+.form-signup {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.form-signup input {
+  margin: 20px 0 20px 0;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+.form-signup button {
+  font-size: 30px;
+  width: 170px;
+  color: wheat;
+  background-color: darkblue;
+  border-radius: 6px;
+  margin: 30px 0 30px 0;
+}
+/*# sourceMappingURL=main.css.map */

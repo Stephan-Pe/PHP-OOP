@@ -1,0 +1,18 @@
+@import 'scssparts/reset';
+@import 'scssparts/mediaq';
+@import 'scssparts/colors';
+@import 'scssparts/content';
+
+html {
+    height: 100%;
+    width: 100vw;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: $gray;
+    font-size: 20px;
+    font-family: sans-serif;
+}
