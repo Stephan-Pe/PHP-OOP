@@ -2,6 +2,8 @@
 
 require_once "../dbconn/db.php";
 
+echo DB::get()->getAttribute(PDO::ATTR_CONNECTION_STATUS);
+
 $statement = DB::get()->query("SELECT * FROM task ORDER BY title LIMIT 100");
 $all = $statement->fetchAll();
 
@@ -14,17 +16,3 @@ foreach ($all as $row) {
 }
 
 
-// class ViewUser extends User {
-
-
-//     public function showAllUsers() {
-//         $datas = $this->getAllUsers();
-//         foreach ($datas as $data) {
-//             echo $data['username']."<br>";
-//             echo $data['name']."<br>";
-//         }
-//     }
-// }
-
-// $users = new ViewUser();
-// $users->showAllUsers();
